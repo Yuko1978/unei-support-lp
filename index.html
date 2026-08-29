@@ -51,6 +51,19 @@
   html { scroll-behavior: smooth; }
   body { font-family: 'Noto Sans JP', 'Hiragino Sans', sans-serif; }
   .font-serif { font-family: 'Zen Old Mincho', 'Noto Serif JP', serif; }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity .8s cubic-bezier(.16,1,.3,1), transform .8s cubic-bezier(.16,1,.3,1);
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { transition: none; opacity: 1; transform: none; }
+  }
 </style>
 </head>
 <body class="bg-white text-navy-900 antialiased">
@@ -71,15 +84,15 @@
     <div aria-hidden="true" class="pointer-events-none absolute top-40 -left-20 w-56 h-56 rounded-full bg-pink-100 blur-3xl opacity-70"></div>
 
     <div class="relative max-w-3xl mx-auto text-center">
-      <p class="font-rounded text-xs sm:text-sm tracking-[0.2em] text-pink-500 mb-6">運営サポート・モニター募集</p>
-      <h1 class="font-serif text-2xl sm:text-4xl leading-[1.7] sm:leading-[1.8] text-navy-900">
+      <p class="reveal font-rounded text-xs sm:text-sm tracking-[0.2em] text-pink-500 mb-6">運営サポート・モニター募集</p>
+      <h1 class="reveal font-serif text-2xl sm:text-4xl leading-[1.7] sm:leading-[1.8] text-navy-900">
         あなたの想いを、<br>届く形に。<br>
         発信・仕組み・<br class="sm:hidden">コンテンツ制作で、<br>伴走します。
       </h1>
-      <p class="mt-8 text-sm sm:text-base text-navy-600 leading-loose">
+      <p class="reveal mt-8 text-sm sm:text-base text-navy-600 leading-loose">
         一人で走り続けてきた運営に、<br class="sm:hidden">伴走者を。
       </p>
-      <div class="mt-10">
+      <div class="reveal mt-10">
         <a href="#about" class="inline-flex items-center gap-2 bg-navy-800 text-white text-sm tracking-wide rounded-full px-8 py-4 shadow-sm hover:bg-navy-900 transition-colors">
           詳しくを見る
           <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -93,12 +106,12 @@
   <!-- 2. こんな人におすすめ -->
   <section id="about" class="py-20 sm:py-28 px-5 sm:px-8 bg-navy-50/60">
     <div class="max-w-3xl mx-auto">
-      <div class="text-center mb-12 sm:mb-16">
+      <div class="reveal text-center mb-12 sm:mb-16">
         <p class="font-rounded text-xs tracking-[0.2em] text-pink-500 mb-3">FOR YOU</p>
         <h2 class="font-serif text-xl sm:text-3xl leading-[1.8] text-navy-900">こんな方におすすめです</h2>
       </div>
 
-      <p class="text-sm sm:text-base text-navy-700 leading-loose sm:leading-[2.1] mb-12 text-center sm:text-left">
+      <p class="reveal text-sm sm:text-base text-navy-700 leading-loose sm:leading-[2.1] mb-12 text-center sm:text-left">
         講座やレッスン、講演などで、すでにたしかな実績を積んでこられた方へ。<br class="hidden sm:block">
         それでも運営や発信が「自分の感覚」だけで回っていて、まだ仕組みになっていない。<br class="hidden sm:block">
         起業以来、自分でやってきた方。<br class="hidden sm:block">
@@ -106,19 +119,19 @@
       </p>
 
       <ul class="space-y-4 sm:space-y-5">
-        <li class="flex items-start gap-4 bg-white rounded-2xl border border-navy-100 px-5 py-5 sm:px-6 sm:py-6">
+        <li class="reveal flex items-start gap-4 bg-white rounded-2xl border border-navy-100 px-5 py-5 sm:px-6 sm:py-6">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mt-0.5 shrink-0 text-pink-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
           </svg>
           <p class="text-sm sm:text-base text-navy-800 leading-relaxed">講座やレッスンの予約・問い合わせ対応が、そのつど手作業になっている</p>
         </li>
-        <li class="flex items-start gap-4 bg-white rounded-2xl border border-navy-100 px-5 py-5 sm:px-6 sm:py-6">
+        <li class="reveal flex items-start gap-4 bg-white rounded-2xl border border-navy-100 px-5 py-5 sm:px-6 sm:py-6">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mt-0.5 shrink-0 text-pink-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
           </svg>
           <p class="text-sm sm:text-base text-navy-800 leading-relaxed">やることや進捗が自分の頭の中にしかなく、抜け漏れがいつも不安</p>
         </li>
-        <li class="flex items-start gap-4 bg-white rounded-2xl border border-navy-100 px-5 py-5 sm:px-6 sm:py-6">
+        <li class="reveal flex items-start gap-4 bg-white rounded-2xl border border-navy-100 px-5 py-5 sm:px-6 sm:py-6">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mt-0.5 shrink-0 text-pink-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
           </svg>
@@ -131,7 +144,7 @@
   <!-- 3. サービス内容 -->
   <section class="py-20 sm:py-28 px-5 sm:px-8">
     <div class="max-w-3xl mx-auto">
-      <div class="text-center mb-12 sm:mb-16">
+      <div class="reveal text-center mb-12 sm:mb-16">
         <p class="font-rounded text-xs tracking-[0.2em] text-pink-500 mb-3">SERVICE</p>
         <h2 class="font-serif text-xl sm:text-3xl leading-[1.8] text-navy-900">サポート内容（3ヶ月の流れ）</h2>
         <p class="mt-5 text-sm sm:text-base text-navy-600 leading-loose">
@@ -141,7 +154,7 @@
       </div>
 
       <!-- 月1回の壁打ち・伴走（土台） -->
-      <div class="border border-navy-100 rounded-3xl p-7 sm:p-9 mb-12">
+      <div class="reveal border border-navy-100 rounded-3xl p-7 sm:p-9 mb-12">
         <div class="flex items-center gap-3 mb-4">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 shrink-0 text-pink-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
             <rect x="3" y="4" width="18" height="17" rx="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -161,7 +174,7 @@
 
         <div class="space-y-10 sm:space-y-12">
           <!-- 1〜2ヶ月目 -->
-          <div class="relative">
+          <div class="reveal relative">
             <span class="absolute -left-10 sm:-left-12 top-0 flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-pink-500 text-white text-xs font-serif ring-4 ring-white">1</span>
             <p class="text-xs tracking-[0.15em] text-navy-400 mb-2">1〜2ヶ月目</p>
             <h3 class="font-serif text-base sm:text-lg text-navy-900 mb-3">仕組み化を2つ実装</h3>
@@ -206,7 +219,7 @@
           </div>
 
           <!-- 3ヶ月目 -->
-          <div class="relative">
+          <div class="reveal relative">
             <span class="absolute -left-10 sm:-left-12 top-0 flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-pink-500 text-white text-xs font-serif ring-4 ring-white">2</span>
             <p class="text-xs tracking-[0.15em] text-navy-400 mb-2">3ヶ月目</p>
             <h3 class="font-serif text-base sm:text-lg text-navy-900 mb-3">自走定着サポート</h3>
@@ -243,10 +256,10 @@
         </div>
       </div>
 
-      <p class="mt-12 text-xs sm:text-sm text-navy-500 leading-relaxed text-center">
+      <p class="reveal mt-12 text-xs sm:text-sm text-navy-500 leading-relaxed text-center">
         その他、現在お悩みの部分があれば適宜ご相談いただけます。
       </p>
-      <p class="mt-3 text-xs sm:text-sm text-navy-400 leading-relaxed text-center">
+      <p class="reveal mt-3 text-xs sm:text-sm text-navy-400 leading-relaxed text-center">
         ※ スライド・SNS投稿文の作成・動画編集など、継続的な制作物の代行は含まれません。
       </p>
     </div>
@@ -255,12 +268,12 @@
   <!-- 4. モニター条件・料金 -->
   <section class="py-20 sm:py-28 px-5 sm:px-8 bg-pink-50/60">
     <div class="max-w-3xl mx-auto">
-      <div class="text-center mb-12 sm:mb-16">
+      <div class="reveal text-center mb-12 sm:mb-16">
         <p class="font-rounded text-xs tracking-[0.2em] text-pink-500 mb-3">MONITOR</p>
         <h2 class="font-serif text-xl sm:text-3xl leading-[1.8] text-navy-900">モニター募集要項</h2>
       </div>
 
-      <div class="bg-white border border-pink-100 rounded-3xl p-7 sm:p-10 mb-8 shadow-sm">
+      <div class="reveal bg-white border border-pink-100 rounded-3xl p-7 sm:p-10 mb-8 shadow-sm">
         <div class="flex items-end justify-between flex-wrap gap-3 pb-6 mb-6 border-b border-pink-100">
           <div>
             <p class="text-xs text-navy-400 mb-1">正規価格（3ヶ月）</p>
@@ -284,7 +297,7 @@
         </dl>
       </div>
 
-      <div class="rounded-3xl border border-pink-100 bg-white p-7 sm:p-10">
+      <div class="reveal rounded-3xl border border-pink-100 bg-white p-7 sm:p-10">
         <h3 class="font-serif text-base sm:text-lg mb-4 text-navy-900">モニター特典としてお願いしたいこと</h3>
         <ul class="space-y-3 text-sm sm:text-base text-navy-700 leading-relaxed">
           <li class="flex items-start gap-3">
@@ -303,17 +316,17 @@
   <!-- 4.5 プロフィール -->
   <section id="profile" class="py-20 sm:py-28 px-5 sm:px-8">
     <div class="max-w-3xl mx-auto">
-      <div class="text-center mb-12 sm:mb-16">
+      <div class="reveal text-center mb-12 sm:mb-16">
         <p class="font-rounded text-xs tracking-[0.2em] text-pink-500 mb-3">PROFILE</p>
         <h2 class="font-serif text-xl sm:text-3xl leading-[1.8] text-navy-900">運営サポート事務局について</h2>
       </div>
 
       <div class="grid sm:grid-cols-[220px_1fr] gap-8 sm:gap-10 items-start">
-        <div class="mx-auto sm:mx-0 w-48 sm:w-full">
+        <div class="reveal mx-auto sm:mx-0 w-48 sm:w-full">
           <img src="profile-yuko.jpg" alt="なかたにゆうこ" class="w-full aspect-[4/5] object-cover rounded-3xl border border-navy-100">
         </div>
 
-        <div>
+        <div class="reveal">
           <h3 class="font-serif text-lg sm:text-xl text-navy-900 mb-1">なかたに ゆうこ</h3>
           <p class="text-xs sm:text-sm text-navy-400 mb-6">兵庫県在住</p>
 
@@ -336,14 +349,14 @@
   <!-- 5. 申込み導線 -->
   <section id="apply" class="py-20 sm:py-28 px-5 sm:px-8">
     <div class="max-w-2xl mx-auto text-center">
-      <p class="font-rounded text-xs tracking-[0.2em] text-pink-500 mb-3">ENTRY</p>
-      <h2 class="font-serif text-xl sm:text-3xl leading-[1.8] text-navy-900 mb-5">お申込みはこちら</h2>
-      <p class="text-sm sm:text-base text-navy-600 leading-loose mb-12">
+      <p class="reveal font-rounded text-xs tracking-[0.2em] text-pink-500 mb-3">ENTRY</p>
+      <h2 class="reveal font-serif text-xl sm:text-3xl leading-[1.8] text-navy-900 mb-5">お申込みはこちら</h2>
+      <p class="reveal text-sm sm:text-base text-navy-600 leading-loose mb-12">
         まずは30分の無料相談で、今の状況を伺わせてください。<br class="hidden sm:block">
         合う・合わないも含めて、じっくりお話しできればと思います。
       </p>
 
-      <div class="max-w-xs mx-auto">
+      <div class="reveal max-w-xs mx-auto">
         <a href="https://forms.gle/yWHC81qC2VZQExqh8" target="_blank" rel="noopener noreferrer"
            class="inline-flex w-full flex-col items-center justify-center gap-2 bg-navy-800 text-white rounded-2xl px-6 py-6 hover:bg-navy-900 transition-colors">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -354,7 +367,7 @@
         </a>
       </div>
 
-      <p class="mt-10 text-xs text-navy-400 leading-relaxed">
+      <p class="reveal mt-10 text-xs text-navy-400 leading-relaxed">
         無料相談30分／オンライン（Zoom等）でのご案内となります
       </p>
     </div>
@@ -364,6 +377,37 @@
   <footer class="py-10 px-5 sm:px-8 border-t border-navy-100 text-center">
     <p class="text-xs text-navy-400">水滴々・運営サポート事務局</p>
   </footer>
+
+  <script>
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      if (reduceMotion || !('IntersectionObserver' in window)) {
+        els.forEach(function (el) { el.classList.add('is-visible'); });
+        return;
+      }
+
+      els.forEach(function (el) {
+        var siblings = Array.prototype.filter.call(el.parentElement.children, function (c) {
+          return c.classList.contains('reveal');
+        });
+        var idx = siblings.indexOf(el);
+        el.style.transitionDelay = Math.min(idx * 90, 360) + 'ms';
+      });
+
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+      els.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
 
 </body>
 </html>
