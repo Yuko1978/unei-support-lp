@@ -88,12 +88,13 @@
   header .to-entry {
     font-size: 12px; letter-spacing: .12em; color: #fff; text-decoration: none;
     background: linear-gradient(90deg, var(--brown), var(--brown-light));
-    padding: 6px 16px; border-radius: 999px;
+    padding: 6px 16px; border-radius: 999px; white-space: nowrap;
   }
+  @media (max-width: 767px) { header .to-entry { letter-spacing: .04em; padding: 6px 12px; } }
 
   /* 1. ファーストビュー */
-  .hero { position: relative; padding: 96px 0 72px; text-align: center; overflow: hidden; }
-  @media (min-width: 768px) { .hero { padding: 120px 0 96px; } }
+  .hero { position: relative; padding: 128px 0 88px; text-align: center; overflow: hidden; }
+  @media (min-width: 768px) { .hero { padding: 168px 0 120px; } }
   .hero .brandline { font-weight: 700; font-size: 18px; letter-spacing: .2em; color: var(--ink-strong); line-height: 1.7; }
   .hero .brandline span { display: block; font-size: 15px; letter-spacing: .12em; }
   .hero .rule { height: 1px; background: var(--line); margin: 24px 0 32px; }
@@ -109,7 +110,7 @@
   @media (min-width: 768px) { .ripple { height: 220px; margin: 0; } }
   .ripple svg { position: absolute; inset: 0; width: 100%; height: 100%; }
 
-  .hero .label { margin-top: 48px; }
+  .hero .label { margin-top: 0; }
   .hero h1 {
     margin-top: 8px;
     font-family: 'Shippori Mincho', 'Yu Mincho', serif; font-weight: 700;
@@ -267,7 +268,7 @@
   <header>
     <div class="bar">
       <a href="#top" class="brand">よはくじむ<small>水滴々</small></a>
-      <a href="#apply" class="to-entry">お申込み</a>
+      <a href="#apply" class="to-entry"><span class="pc">運営サポート・モニター募集</span>30分無料相談に申し込む</a>
     </div>
   </header>
 
@@ -282,28 +283,6 @@
       <i class="drop pc-only" style="right:16%;bottom:10%;width:56px;height:52px"><svg><use href="#drop"/></svg></i>
     </div>
     <div class="wrap">
-      <p class="brandline reveal">水滴々<span>よはくじむ</span></p>
-      <div class="rule reveal"></div>
-
-      <div class="ripple reveal" aria-hidden="true">
-        <svg viewBox="0 0 600 220" preserveAspectRatio="xMidYMid slice">
-          <g fill="none" stroke="#ffffff" stroke-linecap="round">
-            <ellipse cx="380" cy="160" rx="40" ry="9" stroke-opacity=".9" stroke-width="2"/>
-            <ellipse cx="380" cy="160" rx="90" ry="20" stroke-opacity=".6" stroke-width="1.6"/>
-            <ellipse cx="380" cy="160" rx="160" ry="36" stroke-opacity=".4" stroke-width="1.4"/>
-            <ellipse cx="380" cy="160" rx="250" ry="56" stroke-opacity=".25" stroke-width="1.2"/>
-            <ellipse cx="380" cy="160" rx="360" ry="80" stroke-opacity=".15" stroke-width="1"/>
-          </g>
-          <g transform="translate(366 58)">
-            <path d="M14 0 C14 0 0 18 0 27 A14 14 0 0 0 28 27 C28 18 14 0 14 0 Z" fill="#e8f1f7" stroke="#ffffff" stroke-width="1.5"/>
-            <ellipse cx="9" cy="24" rx="3" ry="5" fill="#ffffff" opacity=".9"/>
-          </g>
-          <g transform="translate(372 132)">
-            <path d="M8 18 C8 18 0 8 8 0 C16 8 8 18 8 18 Z" fill="#ffffff" opacity=".85"/>
-          </g>
-        </svg>
-      </div>
-
       <p class="label reveal">運営サポート・モニター募集</p>
       <h1 class="reveal">あなたの想いを、<br>届く形に。</h1>
       <p class="sub reveal">
@@ -425,7 +404,7 @@
           <h3>オプション</h3>
           <ul>
             <li>講座用セミナースライドの作成</li>
-            <li>動画編集</li>
+            <li>動画編集<span class="note" style="display:block">ただいま満席のため、新規のご依頼はお休みしています</span></li>
             <li>その他、制作物</li>
           </ul>
         </div>
@@ -503,7 +482,7 @@
       </div>
       <p class="lead reveal">まずは30分の無料相談で、<br class="sp">今の状況を伺わせてください。<br>合う・合わないも含めて、<br class="sp">じっくりお話しできればと思います。</p>
       <div class="reveal">
-        <a class="btn" href="https://forms.gle/yWHC81qC2VZQExqh8" target="_blank" rel="noopener noreferrer">申込みフォームへ</a>
+        <a class="btn" href="https://forms.gle/yWHC81qC2VZQExqh8" target="_blank" rel="noopener noreferrer">運営サポート・モニター募集<br>30分無料相談に申し込む</a>
       </div>
       <p class="note reveal">無料相談30分／オンライン（Zoom等）でのご案内となります</p>
     </div>
