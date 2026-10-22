@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>運営サポート・モニター募集｜あなたの想いを、届く形に。</title>
-<meta name="description" content="講座・レッスン・講演の実績はあるのに、運営や発信が仕組みになっていない方へ。進捗確認の打ち合わせと、運営の仕組み化を一緒に進める3ヶ月の運営サポート・モニターを募集します。">
+<title>運営サポート・モニター募集｜一人で続けてきた運営を、無理なく続く形に。</title>
+<meta name="description" content="講座・レッスン・講演などを一人で続けてこられた方へ。Googleアカウントなど身近な道具を使い、これまでの運営をシンプルな仕組みに整える3ヶ月の運営サポート・モニターを募集します。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
@@ -151,7 +151,30 @@
   }
 
   .note { font-size: 13px; color: var(--mute); line-height: 1.9; }
-  .for-you .intro { margin-bottom: 40px; }
+  .for-you .intro { margin-bottom: 28px; }
+  .intro-sub {
+    margin-bottom: 40px; text-align: center;
+    font-family: 'Shippori Mincho', 'Yu Mincho', serif; font-weight: 600;
+    font-size: 16px; line-height: 2; color: var(--ink-strong);
+  }
+  @media (min-width: 768px) { .intro-sub { font-size: 17px; } }
+  .ask-head {
+    text-align: center; font-weight: 700; font-size: 18px; letter-spacing: .12em;
+    color: var(--brown); margin-bottom: 16px;
+  }
+  @media (min-width: 768px) { .ask-head { font-size: 20px; } }
+  .menu .ex { display: block; margin-top: 6px; font-size: 13px; color: var(--mute); line-height: 1.8; }
+
+  /* 3ヶ月後のイメージ */
+  .after {
+    margin-top: 72px; background: var(--bg-soft); border-radius: 18px;
+    padding: 32px 24px 16px;
+  }
+  @media (min-width: 768px) { .after { padding: 40px 44px 20px; } }
+  .after .head { text-align: center; margin-bottom: 16px; }
+  .after h3 { font-weight: 700; font-size: 17px; letter-spacing: .1em; color: var(--ink-strong); }
+  .after .checks > li:first-child { border-top: 0; }
+  .after .checks > li:last-child { border-bottom: 0; }
 
   /* 3. サポート内容 */
   .monthly {
@@ -284,9 +307,9 @@
     </div>
     <div class="wrap">
       <p class="label reveal">運営サポート・モニター募集</p>
-      <h1 class="reveal">あなたの想いを、<br>届く形に。</h1>
+      <h1 class="reveal">一人で続けてきた運営を、<br>無理なく続く形に。</h1>
       <p class="sub reveal">
-        発信・仕組み・コンテンツ制作で<br>伴走します。
+        Googleアカウントなど身近な道具で、<br>シンプルな仕組みを一緒につくります。
       </p>
       <p class="reveal" style="margin-top:20px;color:var(--mute);font-size:14px">一人で走り続けてきた運営に、伴走者を。</p>
       <div class="cta reveal">
@@ -298,7 +321,7 @@
   <!-- 2. こんな方へ -->
   <section id="about" class="for-you soft">
     <div class="drops" aria-hidden="true">
-      <i class="drop pc-only" style="left:6%;top:22%;width:60px;height:56px"><svg><use href="#drop"/></svg></i>
+      <i class="drop pc-only" style="left:3%;top:6%;width:52px;height:48px"><svg><use href="#drop"/></svg></i>
       <i class="drop" style="right:4%;bottom:12%;width:30px;height:29px"><svg><use href="#drop"/></svg></i>
     </div>
     <div class="wrap">
@@ -307,15 +330,19 @@
         <h2 class="h2">こんな方へ</h2>
       </div>
 
-      <p class="intro reveal">講座やレッスン、講演などで、すでにたしかな実績を積んでこられた方へ。それでも運営や発信が「自分の感覚」だけで回っていて、まだ仕組みになっていない。起業したばかりというより、そろそろ一人で抱えきれなくなってきた——そんな段階の方に向けたサポートです。</p>
+      <p class="intro reveal">講座やレッスン、講演などを、ここまで一人で続けてこられた方へ。お客さまと向き合いながら大切に積み重ねてきた運営や発信を、これからも無理なく続けられる形に整えませんか。活動が広がり、一人で抱えるには手いっぱいになってきた——そんな段階の方に向けたサポートです。</p>
 
+      <p class="intro-sub reveal">大がかりなシステムは必要ありません。<br>Googleアカウントなど、今お使いの身近な道具で、<br>シンプルに回る形をつくります。</p>
+
+      <p class="ask-head reveal">こんなこと、ありませんか？</p>
       <ul class="checks reveal">
-        <li>講座やレッスンの予約・問い合わせ対応が、そのつど手作業になっている</li>
-        <li>申込み後のご案内も、いつも手作業でメッセージやメールを送っている</li>
-        <li>やることや進捗が自分の頭の中にしかなく、抜け漏れがいつも不安</li>
+        <li>予約や問い合わせのたびに、一件ずつ手作業で返信している</li>
+        <li>申込み後のご案内も、毎回メッセージやメールを手で送っている</li>
+        <li>やることや進捗を頭の中で管理していて、抜け漏れが気になる</li>
         <li>発信したい気持ちはあるのに、毎回ゼロから考えて時間がかかる</li>
-        <li>告知のたびに、同じ内容を媒体ごとに作り直している</li>
-        <li>本当はもっと届けたい人がいるのに、運営まで手が回らない</li>
+        <li>問い合わせの入口がいくつもあり、どこから何が届いたか追いきれない</li>
+        <li>投稿や資料の見た目が毎回ちがい、印象がそろわない</li>
+        <li>本当はもっと届けたい人がいるのに、運営に時間をとられている</li>
       </ul>
     </div>
   </section>
@@ -326,44 +353,42 @@
       <div class="sec-head reveal">
         <p class="label">SERVICE</p>
         <h2 class="h2">3ヶ月の道のり</h2>
-        <p class="lead">代わりにやる、のではなく。<br>隣で一緒に考え、<br class="sp">仕組みを一つずつととのえます。</p>
+        <p class="lead">代わりにやる、のではなく。<br>これまでのやり方を活かしながら、<br class="sp">隣で一緒に仕組みをととのえます。</p>
       </div>
 
       <div class="monthly reveal">
         <p class="label">EVERY MONTH</p>
         <h3>進捗確認の打ち合わせ</h3>
         <p class="meta">月2時間まで（毎週30分、隔週1時間など、ご希望にあわせます）</p>
-        <p>現状をひとつずつ棚卸しして、<br class="pc">次の一手を一緒に決めていく時間です。<br>「何から手をつければいいか分からない」から、<br class="pc">「ここから小さく始めてみよう」へ。</p>
+        <p>今の運営をひとつずつ棚卸しして、<br class="pc">次の一手を一緒に決めていく時間です。<br>「どこから手をつけよう」から、<br class="pc">「ここから小さく始めてみよう」へ。</p>
       </div>
 
       <div class="step reveal">
         <div class="num"><span>MONTH</span><b>1</b></div>
         <div class="body">
-          <h3>ヒアリングと、仕組み化の骨子づくり</h3>
-          <p>初回のヒアリングで今の運営をお伺いし、仕組み化の骨子をご提案します。たとえば下のような中から、いまのお客様に合うものをご相談のうえで決め、実装をスタートします。</p>
+          <h3>今の運営を知り、仕組みの土台をつくる</h3>
+          <p>初回のヒアリングで、今の運営の流れや続けてきたやり方を伺います。そのうえで、どこを仕組みにするとラクになるかを整理して骨子をご提案し、たとえば次のようなところから実装を始めます。</p>
           <ul class="menu">
             <li>
-              <span class="what">LINE公式アカウントのリッチメニュー設定と基本導線の整備</span>
+              <span class="what">基本導線の整備</span>
               <span class="who">問い合わせや案内が、個別のやり取りに埋もれがちな方に</span>
+              <span class="ex">例：LINE公式アカウントのリッチメニュー設定、シンプルなHPの設計（HP作成は別途オプション）</span>
             </li>
             <li>
-              <span class="what">進捗確認用の管理ボード作成（Notion／スプレッドシート）</span>
-              <span class="who">やることが頭の中にあって、抜け漏れが心配な方に</span>
+              <span class="what">進捗を見える化する管理ボードづくり（Notion／Googleスプレッドシート）</span>
+              <span class="who">やることを頭の中で管理していて、抜け漏れが気になる方に</span>
             </li>
             <li>
               <span class="what">申込み・予約フォームの整備</span>
               <span class="who">受付や確認を、一件ずつ手で行っている方に</span>
-            </li>
-            <li>
-              <span class="what">ご自身の投稿の横展開サポート（予約投稿できる媒体に限ります）</span>
-              <span class="who">同じ内容を、媒体ごとに作り直している方に</span>
+              <span class="ex">例：Googleアカウントで使えるフォームなど身近なツールに、AIも取り入れて、シンプルな受付の流れを設計</span>
             </li>
             <li>
               <span class="what">発信テンプレートの作成（構成の型＋Canvaデザインテンプレート2〜3パターン、テーマカラー・フォントの統一）</span>
               <span class="who">毎回ゼロから考えて、発信に時間がかかる方に</span>
             </li>
           </ul>
-          <p class="note">※ どれにするか迷う必要はありません。ヒアリングを踏まえてこちらからご提案します。</p>
+          <p class="note">※ ここに挙げたのは一例です。どこから整えるかは、ヒアリングを踏まえて一緒に決めます。ほかに気になるところがあれば、あわせてご相談ください。</p>
         </div>
       </div>
 
@@ -371,22 +396,36 @@
         <div class="num"><span>MONTH</span><b>2</b></div>
         <div class="body">
           <h3>使いながら、仕組みを育てる</h3>
-          <p>実装した仕組みを実際に使っていただきながら、気になるところを整え、必要に応じて次の仕組みづくりへ進みます。</p>
+          <p>つくった仕組みを実際の運営で使っていただき、使いにくいところをその都度調整します。必要に応じて、次の仕組みづくりへ進みます。</p>
         </div>
       </div>
 
       <div class="step reveal">
         <div class="num"><span>MONTH</span><b>3</b></div>
         <div class="body">
-          <h3>3ヶ月後、一人で回せる状態に整える</h3>
-          <p>新しい仕組みは増やさず、これまでに実装した仕組みを3ヶ月後に「一人で回せる状態」にする期間です。必要なサポートを組み合わせて、自走を定着させます。</p>
+          <h3>サポート後も、ご自身で回せる状態に</h3>
+          <p>新しい仕組みは増やさず、これまでにつくった仕組みを、サポート終了後もご自身で回せるように整える期間です。次のようなサポートを組み合わせて、使いこなせる状態まで伴走します。</p>
           <ul class="menu">
-            <li><span class="what">打ち合わせの時間内に実際に操作していただき、その場でつまずきを解消</span></li>
+            <li><span class="what">打ち合わせの中で実際に操作していただき、つまずきをその場で解消</span></li>
             <li><span class="what">操作手順を画面録画した短い動画を作成してお渡し</span></li>
             <li><span class="what">運用中に出てきた疑問をまとめたQ&amp;Aシートを作成</span></li>
-            <li><span class="what">最終回は「振り返り面談」として、3ヶ月の振り返りと、今後の優先順位・次の一手を整理してお渡し</span></li>
+            <li><span class="what">最終回は振り返り。3ヶ月でできたことを確かめ、この先一人で続けていくためのポイントを整理</span></li>
           </ul>
         </div>
+      </div>
+
+      <div class="after reveal">
+        <div class="head">
+          <p class="label">AFTER 3 MONTHS</p>
+          <h3>3ヶ月後のイメージ</h3>
+        </div>
+        <ul class="checks">
+          <li>Googleアカウントなど今ある道具がつながり、受付から返信までが自然に流れている</li>
+          <li>申込み後のご案内が決まった流れで届き、送り忘れの心配がない</li>
+          <li>入口から案内までが一本につながり、お客さまもご自身も迷わない</li>
+          <li>テンプレートが整い、発信の見た目がそろっている</li>
+          <li>運営にかけていた時間と気持ちを、本当に届けたいことに使える</li>
+        </ul>
       </div>
 
       <div class="incl reveal">
@@ -396,7 +435,7 @@
             <li>進捗確認の打ち合わせ（月2時間まで）</li>
             <li>運営の仕組み化の実装</li>
             <li>操作動画・Q&amp;Aシートの作成</li>
-            <li>最終回の振り返り面談</li>
+            <li>最終回の振り返り</li>
             <li>期間中、運営のお悩みのご相談</li>
           </ul>
         </div>
@@ -404,8 +443,10 @@
           <h3>オプション</h3>
           <ul>
             <li>講座用セミナースライドの作成</li>
+            <li>シンプルなHPの作成</li>
             <li>動画編集<span class="note" style="display:block">ただいま満席のため、新規のご依頼はお休みしています</span></li>
             <li>その他、制作物</li>
+            <li>終了後のスポット相談<span class="note" style="display:block">ご希望の方には、サポート終了後のご相談もお受けしています</span></li>
           </ul>
         </div>
       </div>
@@ -438,8 +479,8 @@
       <div class="ask reveal">
         <h3>モニターとしてお願いしたいこと</h3>
         <ul>
-          <li>ご感想・実績としてのご紹介（お名前の出し方はご相談のうえ決めます）</li>
-          <li>体験談としてのご協力</li>
+          <li>サポート終了後のご感想のご提供</li>
+          <li>実績・体験談としてのご紹介（お名前の出し方はご相談のうえ決めます）</li>
         </ul>
       </div>
     </div>
@@ -460,9 +501,9 @@
         </div>
         <div class="text reveal">
           <p>兵庫県在住。</p>
-          <p>これまでクライアント様とご一緒してきた中で気づいたのは、「伝える力」より先に「届ける仕組み」がないと、どんなに良いサービスも止まってしまうということ。</p>
-          <p>薬剤師として専門知識を持ちつつ、語学留学や翻訳の学びを経て、今は女性起業家のバックオフィスや資料制作、動画編集など、人の想いを「伝わる形」にする仕事に携わる。仕組み化して自走をサポートします。</p>
-          <p>8歳の男児の母。読書、散歩、ハイキングが好き。フルマラソン4回完走のコツコツ型。</p>
+          <p>これまで女性起業家の方々の事務局やバックオフィスをお手伝いする中で、想いのこもったサービスほど、運営がご本人に集中して手いっぱいになりやすいと感じてきました。良いサービスを長く届け続けるには、それを支えるシンプルな仕組みが欠かせません。</p>
+          <p>薬剤師としての専門性を持ちながら、語学留学や翻訳の学びを経て、今はバックオフィス、資料制作、動画編集など、人の想いを「伝わる形」にする仕事をしています。大切にしているのは、代わりに抱え込むことではなく、ご自身で回せる仕組みを一緒につくることです。</p>
+          <p>8歳の男の子の母。読書、散歩、ハイキングが好き。フルマラソン4回完走のコツコツ型。</p>
         </div>
       </div>
     </div>
@@ -480,7 +521,7 @@
         <p class="label">ENTRY</p>
         <h2 class="h2">お申込み</h2>
       </div>
-      <p class="lead reveal">まずは30分の無料相談で、<br class="sp">今の状況を伺わせてください。<br>合う・合わないも含めて、<br class="sp">じっくりお話しできればと思います。</p>
+      <p class="lead reveal">まずは30分の無料相談で、<br class="sp">今の運営の様子をお聞かせください。<br>どこを仕組みにするとラクになりそうか、<br class="sp">一緒に整理するところから始めます。<br>合う・合わないも含めて、<br class="sp">お気軽にご相談ください。</p>
       <div class="reveal">
         <a class="btn" href="https://forms.gle/yWHC81qC2VZQExqh8" target="_blank" rel="noopener noreferrer">運営サポート・モニター募集<br>30分無料相談に申し込む</a>
       </div>
